@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SystematicRevV2Model" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="SystematicRevV2Entities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Test_Vishnu_Table1" EntityType="SystematicRevV2Model.Test_Vishnu_Table1" />
+  </EntityContainer>
+  <EntityType Name="Test_Vishnu_Table1">
+    <Key>
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Name="SID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="SNAME" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="MARKS" Type="Int32" />
+  </EntityType>
+</Schema>
